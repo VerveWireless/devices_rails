@@ -1,1 +1,9 @@
 @import 'marvelapp/devices';
+
+.marvel-device {
+  &.ipad-native {
+    @extend .ipad;
+    width: 768px;
+    height: 1024px;
+  }
+}
