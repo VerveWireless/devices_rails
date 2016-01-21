@@ -1,9 +1,115 @@
 @import 'marvelapp/devices';
 
 .marvel-device {
-  &.ipad-native {
+  &.iphone4s-viewport {
+    @extend .iphone4s;
+  }
+  
+  &.iphone4s-native {
+    @extend .iphone4s;
+    width: 640px;
+    height: 960px;
+  }
+  
+  &.iphone5s-viewport {
+    @extend .iphone5s;
+  }
+  
+  &.iphone5s-native {
+    @extend .iphone5s;
+    width: 640px;
+    height: 1136px;
+  }
+  
+  &.iphone6-viewport {
+    @extend .iphone6;
+  }
+  
+  &.iphone6-native {
+    @extend .iphone6;
+    width: 750px;
+    height: 1334px;
+  }
+
+  &.iphone6plus-viewport {
+    @extend .iphone6plus;
+    width: 540px;
+    height: 960px;
+  }
+
+  &.iphone6plus-native {
+    @extend .iphone6plus;
+    width: 1080px;
+    height: 1920px;
+  }
+
+  &.nexus5-viewport {
+    @extend .nexus5;
+    width: 360px;
+    height: 598px;
+  }
+  
+  &.nexus5-native {
+    @extend .nexus5;
+    width: 1920px;
+    height: 1080px;
+  }
+  
+  &.s5-viewport {
+    @extend .s5;
+    width: 360px;
+    height: 640px;
+  }
+  
+  &.s5-native {
+    @extend .s5;
+    width: 1920px;
+    height: 1080px;
+  }
+  
+  &.lumia920-viewport {
+    @extend .lumia920;
+  }
+  
+  &.lumia920-native {
+    @extend .lumia920;
+    width: 1280px;
+    height: 768px;
+  }
+  
+  &.htc-one-viewport {
+    @extend .htc-one;
+    width: 360px;
+    height: 640px;
+  }
+  
+  &.htc-one-native {
+    @extend .htc-one;
+    width: 1920px;
+    height: 1080px;
+  }
+
+  &.ipad-viewport {
     @extend .ipad;
     width: 768px;
     height: 1024px;
+  }
+  
+  &.ipad-native {
+    @extend .ipad;
+    width: 2048px;
+    height: 1536px;
+  }
+
+  // Default screen background gradient
+  .screen {
+    background: rgb(226,228,228);
+    background: -moz-linear-gradient(top, rgba(226,228,228,1) 0%, rgba(125,130,129,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,228,228,1)), color-stop(100%,rgba(125,130,129,1)));
+    background: -webkit-linear-gradient(top, rgba(226,228,228,1) 0%,rgba(125,130,129,1) 100%);
+    background: -o-linear-gradient(top, rgba(226,228,228,1) 0%,rgba(125,130,129,1) 100%);
+    background: -ms-linear-gradient(top, rgba(226,228,228,1) 0%,rgba(125,130,129,1) 100%);
+    background: linear-gradient(to bottom, rgba(226,228,228,1) 0%,rgba(125,130,129,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e4e4', endColorstr='#7d8281',GradientType=0 );
   }
 }
